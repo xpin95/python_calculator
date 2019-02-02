@@ -1,33 +1,32 @@
-result = 0
-def add(x,y):
-    result = x + y;
-    print(result)
+def add(x, y):
+    print(x + y)
 
-def substract(x,y):
+
+def substract(x, y):
     print(x - y)
 
 
-def multiply(x,y):
+def multiply(x, y):
     print(x * y)
 
 
-def divide(x,y):
+def divide(x, y):
     print(x / y)
 
-x = int(input())
-y = int(input())
 
-print("1:sumar")
-print("2:divi")
-print("escribe 3 para sustituir la clave por xxxxx...")
-print("escribe 4 para separar caracteres cada 3 posiciones")
+print("Introduce first number")
+a = int(input())
+print("Introduce second number")
+b = int(input())
+
+print("Please, choise an option: \n1.Add \n2.Substract \n3.Multiply \n4.Divide")
+
 
 num = int(input())
-options = {1: add(x,y),
-           2: substract(x,y),
-           3: multiply(x,y),
-           4: divide(x,y)
-
+options = {1: add(a, b),
+           2: substract(a, b),
+           3: multiply(a, b),
+           4: divide(a, b)
            }
 
-options[num]()
+#options[num]()
